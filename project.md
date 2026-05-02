@@ -1,7 +1,7 @@
 # Master Blacklist Project
 
 ## Goal and Scope
-Create a organized blacklist system with separate categories for different types of threats and unwanted content. Each category maintains its own blocklist file, scripts, and documentation.
+Create an organized blacklist system with separate categories for different types of threats and unwanted content. Each category maintains its own blocklist file, scripts, and documentation.
 
 ## Structure
 The project follows this directory structure:
@@ -9,62 +9,72 @@ The project follows this directory structure:
 ```
 My-project/ (this workspace/aamClaw/Master-Blacklist)
 ├── ads/
-│   ├── hosts             # Final blocklist file for ads (single file, not a directory)
+│   ├── hosts             # Final blocklist file for ads (single file, format: 0.0.0.0 domain per line)
 │   ├── README.md         # Category-specific information
+│   ├── sorce.txt         # List of source URLs (one per line) for quick download
 │   └── scripts/          # Python scripts for processing this category
 │       ├── raw/          # Source host files (downloaded from various sources)
 │       └── result/       # Combined, organized, and deduplicated host file (before final hosts)
 ├── tracking/
 │   ├── hosts
 │   ├── README.md
+│   ├── sorce.txt
 │   └── scripts/
 │       ├── raw/
 │       └── result/
 ├── malware/
 │   ├── hosts
 │   ├── README.md
+│   ├── sorce.txt
 │   └── scripts/
 │       ├── raw/
 │       └── result/
 ├── phishing/
 │   ├── hosts
 │   ├── README.md
+│   ├── sorce.txt
 │   └── scripts/
 │       ├── raw/
 │       └── result/
 ├── ransomware/
 │   ├── hosts
 │   ├── README.md
+│   ├── sorce.txt
 │   └── scripts/
 │       ├── raw/
 │       └── result/
 ├── spam/
 │   ├── hosts
 │   ├── README.md
+│   ├── sorce.txt
 │   └── scripts/
 │       ├── raw/
 │       └── result/
 ├── adult/
 │   ├── hosts
 │   ├── README.md
+│   ├── sorce.txt
 │   └── scripts/
 │       ├── raw/
 │       └── result/
 ├── gambling/
 │   ├── hosts
 │   ├── README.md
+│   ├── sorce.txt
 │   └── scripts/
 │       ├── raw/
 │       └── result/
 ├── dating/
 │   ├── hosts
 │   ├── README.md
+│   ├── sorce.txt
 │   └── scripts/
 │       ├── raw/
 │       └── result/
 ├── bypass/
 │   ├── hosts
 │   ├── README.md
+│   ├── sorce.txt
 │   └── scripts/
 │       ├── raw/
 │       └── result/
@@ -74,7 +84,8 @@ My-project/ (this workspace/aamClaw/Master-Blacklist)
 ## Key Features
 - **Separate Categories**: Each threat/content type is isolated in its own directory.
 - **Python Scripts Only**: All processing scripts are Python and reside in each category's `scripts/` folder.
-- **Hosts File**: Each category's `hosts` file (not a directory) contains the final blocklist (ready for use in Pi-hole, ad blockers, etc.).
+- **Hosts File**: Each category's `hosts` file (not a directory) contains the final blocklist in the standard format (e.g., `0.0.0.0 domain.com` per line) for use in DNS-based blockers like Pi-hole.
+- **Sorce.txt**: Each category's `sorce.txt` file contains a list of source URLs (one per line) for quick download and reference.
 - **Scripts Subdirectories**:
   - `raw/` contains the source host files (as downloaded, one file per source).
   - `result/` contains the combined, organized, and deduplicated host file (before final `hosts` file).
@@ -82,13 +93,14 @@ My-project/ (this workspace/aamClaw/Master-Blacklist)
 - **Extensible**: New categories can be added by duplicating the directory structure.
 
 ## Usage
-1. For each category, place raw source blocklists in the `scripts/raw/` directory or fetch them via the category's scripts.
-2. Use the Python scripts in `scripts/` to process, deduplicate, and combine the raw files, placing the result in `scripts/result/` (e.g., as a temporary combined file).
-3. Then, move or copy the final organized host file from `scripts/result/` to the category's `hosts` file (overwriting the previous version).
-4. The resulting `hosts` file can be used directly with DNS-based blockers like Pi-hole.
+1. For each category, edit `sorce.txt` to include the URLs of the source blocklists (one URL per line).
+2. Use the Python scripts in `scripts/` to download the sources from the URLs in `sorce.txt` (or you can manually place downloaded files in `scripts/raw/`).
+3. The scripts should process the raw files (e.g., convert to standard format, remove duplicates, etc.) and place the combined, organized result in `scripts/result/`.
+4. Then, copy or move the final organized host file from `scripts/result/` to the category's `hosts` file (overwriting the previous version).
+5. The resulting `hosts` file can be used directly with DNS-based blockers like Pi-hole.
 
 ## Maintenance
-- Update sources in `scripts/raw/` as needed and re-run the category's scripts to regenerate the blocklist.
+- Update the URLs in `sorce.txt` as needed and re-run the category's scripts to regenerate the blocklist.
 - Each category is independent; updating one does not affect others.
 
 ## Notes
