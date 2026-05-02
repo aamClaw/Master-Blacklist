@@ -78,6 +78,8 @@ My-project/ (this workspace/aamClaw/Master-Blacklist)
 │   └── scripts/
 │       ├── raw/
 │       └── result/
+├── combined/             # Combined blacklist for security-related categories (ads, tracking, malware, phishing, ransomware, spam)
+│   └── combined_security.hosts  # Final combined blocklist (format: 0.0.0.0 domain per line)
 └── README.md             # This file: overall project overview
 ```
 
@@ -90,6 +92,7 @@ My-project/ (this workspace/aamClaw/Master-Blacklist)
   - `raw/` contains the source host files (as downloaded, one file per source).
   - `result/` contains the combined, organized, and deduplicated host file (before final `hosts` file).
 - **README per Category**: Each category has its own README.md detailing sources, usage, and any special notes.
+- **Combined Category**: The `combined/` directory contains a single blocklist that merges the six security-related categories (ads, tracking, malware, phishing, ransomware, spam) for convenience.
 - **Extensible**: New categories can be added by duplicating the directory structure.
 
 ## Usage
@@ -102,6 +105,7 @@ My-project/ (this workspace/aamClaw/Master-Blacklist)
 ## Maintenance
 - Update the URLs in `sorce.txt` as needed and re-run the category's scripts to regenerate the blocklist.
 - Each category is independent; updating one does not affect others.
+- To update the combined blacklist, regenerate each of the six category blocklists and then combine them (or update the combined blacklist directly by running a script that processes the six categories).
 
 ## Notes
 - Ensure Python is installed to run the scripts.
