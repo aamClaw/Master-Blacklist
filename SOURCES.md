@@ -11,55 +11,19 @@ Update the sources here and then run the respective category's scripts to genera
 
 ## Categories
 
-### Ads
-- Sources for advertising networks, trackers, and analytics.
+### Ads and Tracking
+- Sources for advertising networks, trackers, malware, phishing, ransomware, and spam.
 - Example sources (replace with actual URLs or leave empty if using local files):
   ```
   # Example:
   # https://easylist.to/easylist/easylist.txt
-  # https://github.com/uBlockOrigin/uAssets/raw/master/filters/filters.txt
-  ```
-
-### Tracking
-- Sources for tracking domains and privacy-invasive services.
-- Example sources:
-  ```
-  # Example:
+  # https://easylist.to/easylist/easyprivacy.txt
+  # https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/filters.txt
+  # https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+  # https://adaway.org/hosts.txt
+  # https://hagezi.dns-blocklists.com/adult/pihole.txt
   # https://pgl.yoyo.org/adservers/serverlist.php?hostformat=nohtml&mimetype=plaintext
-  ```
-
-### Malware
-- Sources for malware domains, command and control servers, and exploit kits.
-- Example sources:
-  ```
-  # Example:
-  # https://malwaredomains.com/files/justdomains
-  # https://urlhaus.abuse.ch/downloads/text_online/
-  ```
-
-### Phishing
-- Sources for phishing and fraudulent websites.
-- Example sources:
-  ```
-  # Example:
-  # https://openphish.com/feed.txt
-  # https://phishtank.com/phish_online.php
-  ```
-
-### Ransomware
-- Sources for ransomware distribution sites and related domains.
-- Example sources:
-  ```
-  # Example:
-  # https://ransomwaretracker.abuse.ch/downloads/RW_DOMBL.txt
-  ```
-
-### Spam
-- Sources for spam domains and spam-related services.
-- Example sources:
-  ```
-  # Example:
-  # https://spamhaus.org/drop/drop.txt
+  # https://blocklistproject.github.io/Lists/ads.txt
   ```
 
 ### Adult
@@ -67,8 +31,9 @@ Update the sources here and then run the respective category's scripts to genera
 - Example sources:
   ```
   # Example:
-  # https://raw.githubusercontent.com/v2fly/domain-list-community/master/data/category-porn
-  # https://raw.githubusercontent.com/privacy-protection-tools/anti-AD/master/anti-ad-domains.txt
+  # https://v.firebog.net/hosts/Prigent-Adult.txt
+  # https://raw.githubusercontent.com/chadmayfield/my-pihole-blocklists/master/lists/pi_blocklist_porn_top1m.list
+  # https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/porn/hosts
   ```
 
 ### Gambling
@@ -76,7 +41,8 @@ Update the sources here and then run the respective category's scripts to genera
 - Example sources:
   ```
   # Example:
-  # https://www.gamblingblocklist.com/downloads/gambling_domains.txt
+  # https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/gambling/hosts
+  # https://mirror1.malwaredomains.com/files/justdomains
   ```
 
 ### Dating
@@ -84,7 +50,8 @@ Update the sources here and then run the respective category's scripts to genera
 - Example sources:
   ```
   # Example:
-  # https://raw.githubusercontent.com/StephenH518/hosts/master/domains/dating.txt
+  # https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+  # https://v.firebog.net/hosts/Prigent-Adult.txt
   ```
 
 ### Bypass
@@ -92,10 +59,10 @@ Update the sources here and then run the respective category's scripts to genera
 - Example sources:
   ```
   # Example:
-  # https://www.dnsbl.net.au/contrib/blaze-vpnipspace.txt
-  # https://www.cloudflare.com/ips-v4
-  # https://www.cloudflare.com/ips-v6
-  # https://www.torproject.org/projects/torbot/conf
+  # https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+  # https://mirror1.malwaredomains.com/files/justdomains
+  # https://sslbl.abuse.ch/blacklist/sslipblacklist.csv
+  # https://risk.rudischosting.com/
   ```
 
 ## Notes
@@ -117,3 +84,10 @@ Since automated notifications are not set up in this environment, you can manual
 - Checking the timestamp of the `hosts` file.
 - Reviewing the content of the `hosts` file to ensure it reflects the latest sources.
 - Checking the output of your scripts for any errors or completion messages.
+
+## Current Status (as of latest updates)
+- ads_and_tracking: ~325,817 domains
+- adult: ~4,729,771 domains
+- dating: ~581,785 domains
+- gambling: ~119 domains
+- bypass: ~88,704 domains

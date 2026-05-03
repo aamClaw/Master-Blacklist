@@ -16,33 +16,33 @@ My-project/ (this workspace/aamClaw/Master-Blacklist)
 │       ├── raw/          # Source host files (downloaded from various sources)
 │       └── result/       # Combined, organized, and deduplicated host file (before final hosts)
 ├── adult/
-│   ├── hosts
-│   ├── README.md
-│   ├── sorce.txt
-│   └── scripts/
-│       ├── raw/
-│       └── result/
+│   ├── hosts             # Final blocklist file for adult content (single file, format: 0.0.0.0 domain per line) - Git LFS tracked
+│   ├── README.md         # Category-specific information
+│   ├── sorce.txt         # List of source URLs (one per line) for quick download
+│   └── scripts/          # Python scripts for processing this category
+│       ├── raw/          # Source host files (downloaded from various sources)
+│       └── result/       # Combined, organized, and deduplicated host file (before final hosts)
 ├── gambling/
-│   ├── hosts
-│   ├── README.md
-│   ├── sorce.txt
-│   └── scripts/
-│       ├── raw/
-│       └── result/
+│   ├── hosts             # Final blocklist file for gambling (single file, format: 0.0.0.0 domain per line)
+│   ├── README.md         # Category-specific information
+│   ├── sorce.txt         # List of source URLs (one per line) for quick download
+│   └── scripts/          # Python scripts for processing this category
+│       ├── raw/          # Source host files (downloaded from various sources)
+│       └── result/       # Combined, organized, and deduplicated host file (before final hosts)
 ├── dating/
-│   ├── hosts
-│   ├── README.md
-│   ├── sorce.txt
-│   └── scripts/
-│       ├── raw/
-│       └── result/
+│   ├── hosts             # Final blocklist file for dating (single file, format: 0.0.0.0 domain per line)
+│   ├── README.md         # Category-specific information
+│   ├── sorce.txt         # List of source URLs (one per line) for quick download
+│   └── scripts/          # Python scripts for processing this category
+│       ├── raw/          # Source host files (downloaded from various sources)
+│       └── result/       # Combined, organized, and deduplicated host file (before final hosts)
 ├── bypass/
-│   ├── hosts
-│   ├── README.md
-│   ├── sorce.txt
-│   └── scripts/
-│       ├── raw/
-│       └── result/
+│   ├── hosts             # Final blocklist file for bypass (VPN, proxy, Tor, etc.) (single file, format: 0.0.0.0 domain per line)
+│   ├── README.md         # Category-specific information
+│   ├── sorce.txt         # List of source URLs (one per line) for quick download
+│   └── scripts/          # Python scripts for processing this category
+│       ├── raw/          # Source host files (downloaded from various sources)
+│       └── result/       # Combined, organized, and deduplicated host file (before final hosts)
 └── README.md             # This file: overall project overview
 ```
 
@@ -55,7 +55,7 @@ My-project/ (this workspace/aamClaw/Master-Blacklist)
   - `raw/` contains the source host files (as downloaded, one file per source).
   - `result/` contains the combined, organized, and deduplicated host file (before final `hosts` file).
 - **README per Category**: Each category has its own README.md detailing sources, usage, and any special notes.
-- **Note**: The `ads_and_tracking` category now includes the combined functionality of the previously separate ads, tracking, malware, phishing, ransomware, and spam categories.
+- **Note**: The adult category is very large (~161MB) and is tracked by Git LFS to handle large files efficiently.
 
 ## Usage
 1. For each category, edit `sorce.txt` to include the URLs of the source blocklists (one URL per line).
@@ -67,8 +67,15 @@ My-project/ (this workspace/aamClaw/Master-Blacklist)
 ## Maintenance
 - Update the URLs in `sorce.txt` as needed and re-run the category's scripts to regenerate the blocklist.
 - Each category is independent; updating one does not affect others.
+- For the adult category, ensure Git LFS is properly configured to handle the large file size.
 
 ## Notes
 - Ensure Python is installed to run the scripts.
 - Scripts should be written to output blocklists in standard format (e.g., `0.0.0.0 domain.com` per line) for compatibility.
 - The `hosts` file is a plain text file, one domain per line, optionally prefixed with `0.0.0.0` (or `127.0.0.1`) for use in blockers.
+- Current approximate domain counts (as of latest updates):
+  - ads_and_tracking: ~325,000 domains
+  - adult: ~4,730,000 domains 
+  - dating: ~582,000 domains
+  - gambling: ~119 domains
+  - bypass: ~88,700 domains
