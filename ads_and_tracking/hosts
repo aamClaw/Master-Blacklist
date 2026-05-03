@@ -242,7 +242,7 @@
 0.0.0.0 ! CitrusAd
 0.0.0.0 ! Clear GPC storage item
 0.0.0.0 ! Clickadu servers
-0.0.0.0 ! Commit: 5dab749cffb795b54b7247f2547c7f00f0fa95b2
+0.0.0.0 ! Commit: aac1e001c3ea0b45e3e8c666a3df02f915c978bd
 0.0.0.0 ! Commonly used popup scripts on movie/tv streaming sites
 0.0.0.0 ! Company name: AD EBiS https://github.com/AdguardTeam/cname-trackers/blob/master/data/trackers/ad-ebis.txt
 0.0.0.0 ! Company name: Adobe Experience Cloud (formerly Omniture)
@@ -322,7 +322,7 @@
 0.0.0.0 ! Italian
 0.0.0.0 ! Japanese
 0.0.0.0 ! Korean
-0.0.0.0 ! Last modified: 03 May 2026 14:36 UTC
+0.0.0.0 ! Last modified: 03 May 2026 15:36 UTC
 0.0.0.0 ! Latvian
 0.0.0.0 ! Licence: https://easylist.to/pages/licence.html
 0.0.0.0 ! Lithuanian
@@ -394,7 +394,7 @@
 0.0.0.0 ! Ukranian
 0.0.0.0 ! Used with many websites to generate multiple popups
 0.0.0.0 ! VPN Affiliate Banners
-0.0.0.0 ! Version: 202605031436
+0.0.0.0 ! Version: 202605031536
 0.0.0.0 ! Vietnamese
 0.0.0.0 ! Vinted
 0.0.0.0 ! Webcompat Generichide fixes (Avoid any potential filters being applied to non-ad domains)
@@ -32320,6 +32320,7 @@
 0.0.0.0 ||7vf2llmkf59tl38o4ongf1c7.rest
 0.0.0.0 ||7w.ro/js/trk.js
 0.0.0.0 ||7w4f7nvo9j29zl6ptzqn2ft.cfd
+0.0.0.0 ||7wqnxuznr1zm15.cfd
 0.0.0.0 ||7x4.fr
 0.0.0.0 ||7x5.fr
 0.0.0.0 ||7xylvi8v9up5pbxbj.cfd
@@ -45951,6 +45952,7 @@
 0.0.0.0 ||bjdsmnjybmjdl.site
 0.0.0.0 ||bjfbac.hyundaivaudreuil.com
 0.0.0.0 ||bjgjunljwykym.space
+0.0.0.0 ||bjhpulhgqfq.com
 0.0.0.0 ||bjifvwduqly.com
 0.0.0.0 ||bjiqmvkhrsa.com
 0.0.0.0 ||bjjky.cfd
@@ -60370,6 +60372,7 @@
 0.0.0.0 ||elaboratebasis.com
 0.0.0.0 ||eladove.com
 0.0.0.0 ||elajqjtwnoaef.space
+0.0.0.0 ||elakpcsryesh.com
 0.0.0.0 ||eland-tech.com
 0.0.0.0 ||elapeolh.com
 0.0.0.0 ||elasirenic.cyou
@@ -95847,6 +95850,7 @@
 0.0.0.0 ||pectosealvia.click
 0.0.0.0 ||pectousfossilstae.cfd
 0.0.0.0 ||peculiargentleman.com
+0.0.0.0 ||pedaloflakierchicote.cyou
 0.0.0.0 ||pedangaishons.com
 0.0.0.0 ||peddledteniae.shop
 0.0.0.0 ||pedetescleanse.com
@@ -100432,6 +100436,7 @@
 0.0.0.0 ||pxxcayuq.xyz
 0.0.0.0 ||pxxhbz.apamanshop.com
 0.0.0.0 ||pxyggrntfvmqh.site
+0.0.0.0 ||py6ni5owzrljmlmx.rest
 0.0.0.0 ||py7qbuyqxi69yruh.cfd
 0.0.0.0 ||pyabgyoqeflgd.online
 0.0.0.0 ||pyaemicclept.shop
@@ -105345,6 +105350,7 @@
 0.0.0.0 ||rosingcaroba.qpon
 0.0.0.0 ||rosmishit.cfd
 0.0.0.0 ||rossertiptoes.qpon
+0.0.0.0 ||rossperoxy.qpon
 0.0.0.0 ||rosularbondman.cyou
 0.0.0.0 ||rosy-award.pro
 0.0.0.0 ||rosy-tree.pro
@@ -114453,6 +114459,7 @@
 0.0.0.0 ||smglvclyfsfbt.website
 0.0.0.0 ||smheyshqkrwms.online
 0.0.0.0 ||smichcavalrubber.cfd
+0.0.0.0 ||smifzyuottaxc.website
 0.0.0.0 ||smigro.info
 0.0.0.0 ||smiletavenine.cyou
 0.0.0.0 ||smilewanted.com
@@ -129373,6 +129380,7 @@
 0.0.0.0 ||ulqaxfzytnnpp.site
 0.0.0.0 ||ulqhhlhpevvif.space
 0.0.0.0 ||ulqlijlriiclv.online
+0.0.0.0 ||ulsgwwmkafdqa.website
 0.0.0.0 ||ulsterscarices.com
 0.0.0.0 ||ultaxvuxpgryi.site
 0.0.0.0 ||ulteriorreporting.com
@@ -135845,6 +135853,7 @@
 0.0.0.0 ||widgetserver.com/t/
 0.0.0.0 ||widiaoexhe.top
 0.0.0.0 ||widishpinales.cyou
+0.0.0.0 ||widndpnuiyqty.space
 0.0.0.0 ||widow5blackfr.com
 0.0.0.0 ||widowreseduereseduedescription.com
 0.0.0.0 ||widowtea.com
