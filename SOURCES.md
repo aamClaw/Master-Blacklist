@@ -15,20 +15,20 @@ Update the sources here and then run the respective category's scripts to genera
 - Sources for advertising networks, trackers, and analytics.
 - Example sources (replace with actual URLs or leave empty if using local files):
   ```
-  # Example:
-  # https://easylist.to/easylist/easylist.txt
-  # https://github.com/uBlockOrigin/uAssets/raw/master/filters/filters.txt
-  ```
-
-### Tracking
+  https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts.txt
+  https://easylist.to/easylist/easylist.txt
+  https://github.com/uBlockOrigin/uAssets/raw/master/filters/filters.txt
+  https://adaway.org/hosts.txt
+  https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
+  https://pgl.yoyo.org/adservers/serverlist.php?hostformat=nohtml&mimetype=plaintext
+  https://raw.githubusercontent.com/hagezi/dns-blocklists/master/ad-or.txt
+  ```### Tracking
 - Sources for tracking domains and privacy-invasive services.
 - Example sources:
   ```
-  # Example:
-  # https://pgl.yoyo.org/adservers/serverlist.php?hostformat=nohtml&mimetype=plaintext
-  ```
-
-### Malware
+  https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts.txt
+  https://easylist.to/easylist/easyprivacy.txt
+  ```### Malware
 - Sources for malware domains, command and control servers, and exploit kits.
 - Example sources:
   ```

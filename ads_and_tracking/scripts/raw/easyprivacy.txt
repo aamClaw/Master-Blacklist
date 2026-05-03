@@ -1,9 +1,9 @@
 [Adblock Plus 1.1]
-! Version: 202605022249
+! Version: 202605031139
 ! Title: EasyPrivacy
-! Last modified: 02 May 2026 22:49 UTC
+! Last modified: 03 May 2026 11:39 UTC
 ! Expires: 4 days (update frequency)
-! Commit: 176c36a4dca3197c67c1ef558e61153042a8b783
+! Commit: 26a64c01198adf6af33bda1333c94f2c0385ea66
 ! *** easylist:template_header.txt ***
 ! 
 ! Please report any unblocked adverts or problems
@@ -55497,6 +55497,7 @@ bitdefender.com##body[style="opacity: 0;"]:style(opacity: 1 !important;)
 @@||ps.w.org/wp-slimstat/$domain=wordpress.org
 @@||pub.pixels.ai/prebid_standard.js$script,domain=standard.co.uk
 @@||public.fbot.me/events/$domain=casper.com
+@@||public.profitwell.com^$domain=adblockplus.org|getadblock.com
 @@||px-cdn.net/api/v2/collector/ocaptcha$xmlhttprequest
 @@||qm.redbullracing.com/gtm.js$~third-party
 @@||qm.wrc.com/gtm.js$~third-party
