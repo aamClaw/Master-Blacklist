@@ -1,6 +1,17 @@
-# Ads and Tracking Blocklist
+# Ads and Tracking Category
 
-This category contains domains related to advertising networks, tracking services, and privacy-invasive sources.
-The blocklist is generated from multiple reputable sources including EasyList, EasyPrivacy, uBlock filters, StevenBlack hosts, Adaway, AdGuard DNS, Yoyo, and Hagezi.
+This category contains domains related to advertising, tracking, and analytics networks.
 
-Sources are listed in `sorce.txt` and processed by `process.py` to generate the `hosts` file.
+Last updated: 2026-05-03 14:56:09 UTC
+
+Sources:
+- StevenBlack hosts
+- EasyList
+- EasyPrivacy
+- uBlock filters
+- Adaway hosts
+- AdGuard DNS filter
+- Yoyo ad servers
+- Hagezi ad-or list
+
+Total domains: 142658

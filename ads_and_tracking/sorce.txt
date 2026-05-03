@@ -1,8 +1,8 @@
-https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts.txt
+https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
 https://easylist.to/easylist/easylist.txt
 https://easylist.to/easylist/easyprivacy.txt
 https://github.com/uBlockOrigin/uAssets/raw/master/filters/filters.txt
 https://adaway.org/hosts.txt
 https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
 https://pgl.yoyo.org/adservers/serverlist.php?hostformat=nohtml&mimetype=plaintext
-https://raw.githubusercontent.com/hagezi/dns-blocklists/master/ad-or.txt
+https://raw.githubusercontent.com/hagezi/dns-blocklists/master/domains/pro.txt
